@@ -82,7 +82,7 @@ class Listener
         ), $config);
         $this->indexable = $indexable;
         $this->objectPersister = $objectPersister;
-        $this->propertyAccessor = PropertyAccess::createPropertyAccessor();
+        $this->propertyAccessor = PropertyAccess::createPropertyAccessorBuilder()->enableMagicCall()->getPropertyAccessor();
 
         if ($logger && $this->objectPersister instanceof ObjectPersister) {
             $this->objectPersister->setLogger($logger);
