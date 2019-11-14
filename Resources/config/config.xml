@@ -52,5 +52,15 @@
             <argument>%fos_elastica.property_accessor.magicCall%</argument>
             <argument>%fos_elastica.property_accessor.throwExceptionOnInvalidIndex%</argument>
         </service>
+
+        <service id="fos_elastica.command.populate" class="FOS\ElasticaBundle\Command\PopulateCommand">
+            <tag name="console.command" command="fos:elastica:populate" />
+        </service>
+        <service id="fos_elastica.command.reset" class="FOS\ElasticaBundle\Command\PopulateCommand">
+            <tag name="console.command" command="fos:elastica:reset" />
+        </service>
+        <service id="fos_elastica.command.search" class="FOS\ElasticaBundle\Command\PopulateCommand">
+            <tag name="console.command" command="fos:elastica:search" />
+        </service>
     </services>
 </container>
