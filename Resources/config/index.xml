@@ -36,12 +36,12 @@
             <argument /> <!-- type name -->
         </service>
 
-        <service id="fos_elastica.index_manager" class="%fos_elastica.index_manager.class%">
+        <service id="fos_elastica.index_manager" class="%fos_elastica.index_manager.class%" public="true">
             <argument /> <!-- indexes -->
             <argument type="service" id="fos_elastica.index" /> <!-- default index -->
         </service>
 
-        <service id="fos_elastica.resetter" class="%fos_elastica.resetter.class%">
+        <service id="fos_elastica.resetter" class="%fos_elastica.resetter.class%" public="true">
             <argument type="service" id="fos_elastica.config_manager" />
             <argument type="service" id="fos_elastica.index_manager" />
             <argument type="service" id="fos_elastica.alias_processor" />
