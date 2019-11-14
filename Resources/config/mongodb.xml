@@ -41,7 +41,7 @@
             </call>
         </service>
 
-        <service id="fos_elastica.manager.mongodb" class="%fos_elastica.manager.mongodb.class%">
+        <service id="fos_elastica.manager.mongodb" class="%fos_elastica.manager.mongodb.class%" public="true">
             <argument type="service" id="doctrine_mongodb"/>
             <argument type="service" id="fos_elastica.repository_manager"/>
         </service>
