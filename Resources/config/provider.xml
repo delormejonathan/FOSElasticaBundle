@@ -9,7 +9,7 @@
     </parameters>
 
     <services>
-        <service id="fos_elastica.provider_registry" class="%fos_elastica.provider_registry.class%">
+        <service id="fos_elastica.provider_registry" class="%fos_elastica.provider_registry.class%" public="true">
             <call method="setContainer">
                 <argument type="service" id="service_container" />
             </call>
