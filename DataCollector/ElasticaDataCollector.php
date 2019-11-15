@@ -82,4 +82,12 @@ class ElasticaDataCollector extends DataCollector
     {
         return 'elastica';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function reset()
+    {
+        return parent::reset();
+    }
 }
